@@ -1,15 +1,30 @@
 
 while True:
-    print("1. Registra la cantidad de estudiantes")
-    print("2.Ver registro ")
+    print("1.Registar estudiantes")
+    print("2.Ver todos los estudiantes")
     print("3.Salir")
-    opcion=int(input("Seleccione una opcion"))
- if opcion ==1:
-  archivo=open("C:\Users\Personas Invitadas\Desktop\I-2026-Fundamentos-Python-LuisR\clase06\regirtro.txt","a")
-    print("Registra Estudiantes")
-    nombre=str(input("Ingrese nombre del estudiante")
-    carnet=int(input("ngrese el numero del carnet"))
-  nota=int(input("Ingrese la nota"))
-   archivo.write(f"Nombre: (Nombre)
-               
-          
+    opcon = int(input("Seleccione una opción: "))
+    if opcon == 1:
+        archivo = open(r"/Users/luisalonsorivera/Documents/GitHub/I-2026-Fundamentos-Python-LuisR/Cajero/registro.txt", "a")
+        print("Ingrese el nombre del estudiante: ")
+        nombre= str(input("Ingrese el nombre del estudiante: "))
+        carnet= str(input("Ingrese el número de carnet del estudiante: "))
+        nota= float(input("Ingrese la nota del estudiante: "))
+        #Para guardar los datos en en acrchivo de texto
+        archivo.write(f"Nombre: {nombre}\n")
+        archivo.write(f"Carnet: {carnet}\n")
+        archivo.write(f"Nota: {nota}\n")
+        archivo.close()
+    elif opcon == 2:
+        archivo = open(r"/Users/luisalonsorivera/Documents/GitHub/I-2026-Fundamentos-Python-LuisR/Cajero/registro.txt", "r")
+        print("Ver todos los estudiantes registrados:")
+        estudiantes = archivo.read()
+        print(estudiantes)      
+        archivo.close()
+    elif opcon == 3:
+        break
+    print("Salir")
+    break
+
+   
+
