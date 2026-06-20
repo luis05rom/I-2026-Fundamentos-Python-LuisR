@@ -1,1 +1,3 @@
 Saldo consultado: 10000
+Retiro realizado: 3000
+Depósito realizado: 20000

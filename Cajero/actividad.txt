@@ -1,0 +1,6 @@
+Nombre: Luis Alonso
+Carnet: 1416
+Nota: 80.0
+Nombre: Pedro 
+Carnet: 1213
+Nota: 90.0

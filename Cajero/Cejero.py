@@ -6,7 +6,10 @@ d
 
 print("Cajero automático")
 print("Bienvenido al cajero")
-saldo = 10000
+{~«π^~~}``´««´«´´´´
+ 
+ 
+ ´´´*¨¨¨¨»»»¨´´´´´«+~«´«´«´¡±±’???????’\?}
 
 while True:
     print("1. Consultar saldo")
@@ -29,17 +32,17 @@ while True:
             print("Saldo insuficiente")
         else:
             saldo = saldo - cantidad
-            with open(r"/Users/luisalonsorivera/Documents/GitHub/I-2026-Fundamentos-Python-LuisR/Cajero/informacion.txt", "a") as archivo:
-                archivo.write(f"Retiro realizado: {cantidad}\n")
-                archivo.close()
+            archivo = open(r"/Users/luisalonsorivera/Documents/GitHub/I-2026-Fundamentos-Python-LuisR/Cajero/informacion.txt", "a")
+            archivo.write(f"Retiro realizado: {cantidad}\n")
+            archivo.close()
             print("Retiro exitoso. Su nuevo saldo es:", saldo)
 
     elif opcion == 3:
         cantidad = int(input("Ingrese la cantidad a depositar: "))
         saldo = saldo + cantidad
-        with open(r"/Users/luisalonsorivera/Documents/GitHub/I-2026-Fundamentos-Python-LuisR/Cajero/informacion.txt", "a") as archivo:
-            archivo.write(f"Depósito realizado: {cantidad}\n")
-            archivo.close()
+        archivo = open(r"/Users/luisalonsorivera/Documents/GitHub/I-2026-Fundamentos-Python-LuisR/Cajero/informacion.txt", "a")
+        archivo.write(f"Depósito realizado: {cantidad}\n")
+        archivo.close()
         print("Depósito exitoso. Su nuevo saldo es:", saldo)
 
     elif opcion == 4:
