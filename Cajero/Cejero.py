@@ -1,6 +1,9 @@
 print("Cajero automático")
 print("Bienvenido al cajero")
-saldo = 10000
+{~«π^~~}``´««´«´´´´
+ 
+ 
+ ´´´*¨¨¨¨»»»¨´´´´´«+~«´«´«´¡±±’???????’\?}
 
 while True:
     print("1. Consultar saldo")
