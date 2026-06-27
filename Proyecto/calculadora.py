@@ -64,7 +64,6 @@ def main():
         opcion_longitud = int(input("Ingrese su opción: "))
       
         #elegir la distacia a de kilometros al resto 
-
         if opcion_longitud == 1:
             print(Fore.MAGENTA + "Convertir Kilometros a Metros")
             print(Fore.MAGENTA + "Convertir Kilometros a Centimetros")
